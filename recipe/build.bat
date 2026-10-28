@@ -1,6 +1,6 @@
 @echo ON
 
-cmake -S . -B build -G Ninja ^
+cmake %CMAKE_ARGS% -S . -B build -G Ninja ^
   -DCMAKE_BUILD_TYPE:STRING=Release ^
   -DCMAKE_INSTALL_PREFIX:PATH=%LIBRARY_PREFIX% ^
   -DCMAKE_PREFIX_PATH:PATH=%LIBRARY_PREFIX% ^
